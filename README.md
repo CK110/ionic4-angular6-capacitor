@@ -1,27 +1,39 @@
-# Ionic4Angular6Capacitor
+## Capacitor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+```
+create [directory] [name] [id]  Creates a new Capacitor project
+init [appName] [appId]          Initializes a new Capacitor project in the current directory
+serve                           Serves a Capacitor Progressive Web App in the browser
+sync [platform]                 updates + copy
+update [platform]               updates the native plugins and dependencies based in package.json
+copy [platform]                 copies the web app build into the native app
+open [platform]                 opens the native project workspace (xcode for iOS)
+add [platform]                  add a native platform project
+doctor [platform]               checks the current setup for common errors
+plugin:generate                 start a new Capacitor plugin
 
-## Development server
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+// 初始化
+npx cap init ionic4-angular6-capacitor com.iszoe.ionic4
 
-## Code scaffolding
+// 增加平台
+npx cap add ios
+npx cap add android
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+// copy webDir 目录
+npx cap copy
 
-## Build
+// 更新插件
+npm install your-cordova-plugin
+npx cap update
+npx cap sync
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+// 打开ide
+npx cap open ios
+npx cap open android
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
