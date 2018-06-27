@@ -2,5 +2,5 @@
   "appId": "com.iszoe.ionic4",
   "appName": "ionic4-angular6-capacitor",
   "bundledWebRuntime": false,
-  "webDir": "dist/ionic4-angular6-capacitor"
+  "webDir": "www"
 }
