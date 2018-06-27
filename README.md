@@ -37,3 +37,42 @@ npx cap open android
 
 ```
 
+
+## Capacitor : PWA — Progressive Web App
+
+- make sure in angular.json file, outputPath = "www"
+- make sure in capacitor.config.json file, webDir = "www"
+- make sure in capacitor.config.json file, bundledWebRuntime = “false”
+
+```
+$ npx cap add web
+$ npx cap copy web
+$ npx cap serve
+```
+
+
+## Capacitor : iOS
+
+```
+$ npx cap add ios
+$ npx cap copy ios // Once your web code is built, it needs to be copied to each native project
+$ npx cap open ios
+```
+
+## Capacitor : Android
+
+```
+$ npx cap add android
+$ npx cap copy android // Once your web code is built, it needs to be copied to each native project
+$ npx cap open android
+```
+
+## Capacitor : Electron
+
+```
+$ npx cap add electron
+$ npx cap copy electron // Once your web code is built, it needs to be copied to each native project
+$ cd electron
+$ npm run electron:start
+```
+

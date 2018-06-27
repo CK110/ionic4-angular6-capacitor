@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">ionic4-angular6-capacitor</string>
-    <string name="title_activity_main">ionic4-angular6-capacitor</string>
-    <string name="package_name">com.iszoe.ionic4</string>
-    <string name="fileprovider_authority">com.iszoe.ionic4.fileprovider</string>
-    <string name="custom_url_scheme">com.iszoe.ionic4</string>
-</resources>
