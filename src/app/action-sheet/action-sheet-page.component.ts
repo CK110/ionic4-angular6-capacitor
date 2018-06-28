@@ -5,16 +5,17 @@ import { ActionSheetController } from '@ionic/angular';
 @Component({
   selector: 'app-action-sheet-page',
   template: `
-  <ion-app>
     <ion-header>
       <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
         <ion-title>Action Sheet</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content padding>
       <ion-button (click)="clickMe()">Open Basic ActionSheet</ion-button>
     </ion-content>
-</ion-app>
   `
 })
 export class ActionSheetPageComponent {

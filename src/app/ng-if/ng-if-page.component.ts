@@ -3,9 +3,11 @@ import { Component, ViewChild } from '@angular/core';
 @Component({
   selector: 'ng-if-page',
   template: `
-  <ion-app>
     <ion-header>
       <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
         <ion-title>ngIf</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -27,7 +29,6 @@ import { Component, ViewChild } from '@angular/core';
       </ion-list>
       <ion-button (click)="toggle()">ngIf {{ show ? 'hide' : 'show'}}</ion-button>
     </ion-content>
-  </ion-app>
   `
 })
 export class NgIfPageComponent {

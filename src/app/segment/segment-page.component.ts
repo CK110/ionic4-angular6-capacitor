@@ -3,9 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-segment-page',
   template: `
-  <ion-app>
       <ion-header>
         <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
           <ion-segment id="segment" [(ngModel)]="relationship" (ionChange)="onSegmentChanged($event)">
             <ion-segment-button value="friends" (ionSelect)="onSegmentSelected($event)" class="e2eSegmentFriends">
               Friends
@@ -117,7 +119,6 @@ import { Component } from '@angular/core';
           </ion-segment>
         </ion-toolbar>
       </ion-footer>
-</ion-app>
   `
 })
 export class SegmentPageComponent {

@@ -1,70 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Home Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
 
-<h1>@ionic/angular tests</h1>
-
-<h3>Overlays</h3>
-<ul>
-  <li>
-    <a [routerLink]="['/actionSheet']">Action Sheet Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/alert']">Alert Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/loading']">Loading Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/modal']">Modal Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/popover']">Popover Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/toast']">Toast Page</a>
-  </li>
-</ul>
-
-
-<h3>Inputs</h3>
-<ul>
-  <li>
-    <a [routerLink]="['/basic-inputs']">Basic Inputs Test Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/group-inputs']">Group Inputs Test Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/form-sample']">Form Sample Test Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/segment']">Segment Page</a>
-  </li>
-</ul>
+  <ion-list-header>
+    <ion-label>Overlays</ion-label>
+  </ion-list-header>
+  <ion-item button [routerLink]="['/actionSheet']">
+    <ion-label>Action Sheet Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/alert']">
+    <ion-label>Alert Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/loading']">
+    <ion-label>Loading Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/modal']">
+    <ion-label>Modal Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/popover']">
+    <ion-label>Popover Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/toast']">
+    <ion-label>Toast Page</ion-label>
+  </ion-item>
 
 
-<h3>Navigation</h3>
-<ul>
-  <li>
-    <a href="no-routing-nav">No Routing</a>
-  </li>
-  <li>
-    <a href="simple-nav/page-one">Simple Nav</a>
-  </li>
-  <li>
-    <a href="lazy-load-tabs">Lazy Loaded Route Tabs</a>
-    <ul>
-      <li>
-        <a [routerLink]="['/lazy-load-tabs', 'tabs', { outlets: { tab1: ['mustang'] } }]">Tab 1</a>
-      </li>
-      <li>
-        <a [routerLink]="['/lazy-load-tabs', 'tabs', { outlets: { tab2: ['camaro'] } }]">Tab 2</a>
-      </li>
-      <li>
-        <a [routerLink]="['/lazy-load-tabs', 'tabs', { outlets: { tab3: ['charger'] } }]">Tab 3</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="simple-tabs">Simple Route Tabs</a>
+  <ion-list-header>
+    <ion-label>Inputs</ion-label>
+  </ion-list-header>
+  <ion-item button [routerLink]="['/basic-inputs']">
+    <ion-label>Basic Inputs Test Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/group-inputs']">
+    <ion-label>Group Inputs Test Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/form-sample']">
+    <ion-label>Form Sample Test Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/segment']">
+    <ion-label>Segment Page</ion-label>
+  </ion-item>
+
+
+  <ion-list-header>
+    <ion-label>Navigation</ion-label>
+  </ion-list-header>
+
+
+  <ion-item button href="no-routing-nav">No Routing</ion-item>
+
+  <ion-item button href="simple-nav/page-one">Simple Nav</ion-item>
+
+  <ion-item button href="lazy-load-tabs">Lazy Loaded Route Tabs</ion-item>
+  <ul>
+    <li>
+      <a [routerLink]="['/lazy-load-tabs', 'tabs', { outlets: { tab1: ['mustang'] } }]">Tab 1</a>
+    </li>
+    <li>
+      <a [routerLink]="['/lazy-load-tabs', 'tabs', { outlets: { tab2: ['camaro'] } }]">Tab 2</a>
+    </li>
+    <li>
+      <a [routerLink]="['/lazy-load-tabs', 'tabs', { outlets: { tab3: ['charger'] } }]">Tab 3</a>
+    </li>
+  </ul>
+
+  <ion-item button href="simple-tabs">Simple Route Tabs</ion-item>
     <ul>
       <li>
         <a [routerLink]="['/simple-tabs', 'tabs', { outlets: { tab1: ['mustang'] } }]">Tab 1</a>
@@ -76,31 +82,31 @@
         <a [routerLink]="['/simple-tabs', 'tabs', { outlets: { tab3: ['charger'] } }]">Tab 3</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="static-tabs">Static Tabs</a>
-  </li>
-</ul>
+
+  <ion-item button href="static-tabs">Static Tabs</ion-item>
 
 
-<h3>Content</h3>
-<ul>
-  <li>
-    <a [routerLink]="['/badge']">Badge Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/card']">Card Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/content']">Content Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/ng-if']">ngIf Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/show-hide-when']">Show/Hide When Page</a>
-  </li>
-  <li>
-    <a [routerLink]="['/virtual-scroll']">Virtual Scroll Page</a>
-  </li>
-</ul>
+  <ion-list-header>
+    <ion-label>Content</ion-label>
+  </ion-list-header>
+  <ion-item button [routerLink]="['/badge']">
+    <ion-label>Badge Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/card']">
+    <ion-label>Card Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/content']">
+    <ion-label>Content Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/ng-if']">
+    <ion-label>ngIf Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/show-hide-when']">
+    <ion-label>Show/Hide When Page</ion-label>
+  </ion-item>
+  <ion-item button [routerLink]="['/virtual-scroll']">
+    <ion-label>Virtual Scroll Page</ion-label>
+  </ion-item>
+
+</ion-content>
+

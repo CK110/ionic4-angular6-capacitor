@@ -4,9 +4,11 @@ import { Badge } from '@ionic/angular';
 @Component({
   selector: 'app-badge-page',
   template: `
-  <ion-app>
   <ion-header>
     <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
       <ion-title>Badges</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -71,7 +73,6 @@ import { Badge } from '@ionic/angular';
       </ion-item>
     </ion-list>
   </ion-content>
-  </ion-app>
   `
 })
 export class BadgePageComponent {

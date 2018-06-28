@@ -5,16 +5,17 @@ import { AlertController } from '@ionic/angular';
 @Component({
   selector: 'app-alert-page',
   template: `
-  <ion-app>
     <ion-header>
       <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
         <ion-title>Alert</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content padding>
       <ion-button (click)="clickMe()">Open Basic Alert</ion-button>
     </ion-content>
-</ion-app>
   `
 })
 export class AlertPageComponent {

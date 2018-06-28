@@ -6,16 +6,17 @@ import { ModalPageToPresent } from './modal-page-to-present';
 @Component({
   selector: 'app-modal-page',
   template: `
-  <ion-app>
       <ion-header>
         <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
           <ion-title>Modal</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content padding>
         <ion-button (click)="clickMe()">Open Basic Modal</ion-button>
       </ion-content>
-</ion-app>,
   `,
   encapsulation: ViewEncapsulation.None
 })

@@ -16,7 +16,14 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot({
+      backButtonText: 'Back',
+      iconMode: 'ios',
+      modalEnter: 'modal-slide-in',
+      modalLeave: 'modal-slide-out',
+      pageTransition: 'ios-transition',
+      swipeBackEnabled:'true'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

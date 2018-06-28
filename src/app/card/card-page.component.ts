@@ -4,9 +4,11 @@ import { DomController } from '@ionic/angular';
 @Component({
   selector: 'app-card-page',
   template: `
-  <ion-app>
     <ion-header>
       <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
         <ion-title>Card</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -57,7 +59,6 @@ import { DomController } from '@ionic/angular';
         </ion-item>
       </ion-card>
     </ion-content>
-</ion-app>
   `
 })
 export class CardPageComponent {

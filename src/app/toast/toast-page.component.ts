@@ -5,16 +5,17 @@ import { ToastController } from '@ionic/angular';
 @Component({
   selector: 'app-toast-page',
   template: `
-  <ion-app>
     <ion-header>
       <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
         <ion-title>Toast</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content padding>
       <ion-button (click)="clickMe()">Open Basic Toast</ion-button>
     </ion-content>
-</ion-app>
   `
 })
 export class ToastPageComponent {

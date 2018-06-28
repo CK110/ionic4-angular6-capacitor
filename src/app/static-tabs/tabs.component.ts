@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <ion-app>
       <ion-tabs>
-
-        <ion-tab title="Tab 1" icon="star">
+        <ion-tab title="Tab 1" icon="star" selected="true">
           <ion-header>
             <ion-toolbar>
               <ion-title>Tab 1</ion-title>

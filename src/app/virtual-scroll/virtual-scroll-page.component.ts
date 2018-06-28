@@ -5,9 +5,11 @@ import { ToastController } from '@ionic/angular';
 @Component({
   selector: 'app-virtual-scroll-page',
   template: `
-    <ion-app>
       <ion-header>
         <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
           <ion-title>Test</ion-title>
         </ion-toolbar>
       </ion-header>
@@ -32,7 +34,7 @@ import { ToastController } from '@ionic/angular';
       </ion-virtual-scroll>
 
     </ion-content>
-  </ion-app>`
+`
 })
 export class VirtualScrollPageComponent {
   items: any[] = [];
